@@ -1,12 +1,14 @@
-* {
-	margin: 0;
+  *{
+  	margin: 0;
 	padding: 0;
-	list-style: none;
   }
   
   body {
 	box-sizing: border-box;
+  	margin: 0;
+	padding: 0;
   }
+
   
   a {
 	text-decoration: none;
@@ -15,7 +17,7 @@
 	font-size: large;
 	font-family: "Noto Sans TC","微軟正黑體", sans-serif;
   }
-  
+
   .header {
 	background-image: linear-gradient(90deg, #b8d9f6, #95e3fb);
   }
@@ -32,9 +34,9 @@
   .header .container .logo {
 	display: flex;
 	flex-shrink:1;
-    align-items: center;
-    justify-content: center;
-    width: 130px;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
 	position: absolute;
 	left: 2cm;
 	top: 50%;
@@ -51,6 +53,7 @@
 
   .header .container .navbar ul {
 	display: flex;
+  list-style: none;
   }
   
   .header .container .navbar .item {
@@ -63,19 +66,25 @@
 	border-bottom: 3px solid #ffffff;
   }
 
+  .footer{
+   	background-color: #95e3fb;
+  	height: 100px;
+   	text-align: center;
+  }
+
 .wrap{ /*父元素*/
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
 }
 .left{
     background: #ffffff;
     width: 50%;
-    height: 500px;
+    height: 400px;
 }
 .right{
     background: rgb(247, 255, 255);
     width: 50%;
-    height: 500px;
+    height: 400px;
 }
